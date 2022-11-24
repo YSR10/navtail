@@ -1,7 +1,12 @@
+import React from "react";
+import Login from "./components/Login";
 import "./App.css";
+import { selectuser } from "./features/userslice";
+import Logout from "./components/Logout";
 
-function App() {
-  return <div></div>;
-}
+const App = () => {
+  const user = useselector(selectuser);
+  return <div>{user ? <Logout /> : <Login />}</div>;
+};
 
 export default App;
