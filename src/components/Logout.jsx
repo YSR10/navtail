@@ -6,11 +6,11 @@ import "./Logout.css";
 const Logout = () => {
   const user = useSelector(selectuser);
 
-  const dispatch = useDispatch();
+  const Dispatch = useDispatch();
   const handleLogout = (e) => {
     e.preventDefault();
 
-    dispatch(logout());
+    Dispatch(logout());
   };
 
   return (

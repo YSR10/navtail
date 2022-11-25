@@ -7,12 +7,12 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const dispatch = useDispatch;
+  const Dispatch = useDispatch;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(
+    Dispatch(
       login({
         name: name,
         email: email,

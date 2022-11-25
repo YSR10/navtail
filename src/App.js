@@ -5,7 +5,7 @@ import { selectuser } from "./features/userslice";
 import Logout from "./components/Logout";
 
 const App = () => {
-  const user = useselector(selectuser);
+  const user = useSelector(selectuser);
   return <div>{user ? <Logout /> : <Login />}</div>;
 };
 
