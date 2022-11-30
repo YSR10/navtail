@@ -6,19 +6,19 @@ import "./Logout.css";
 const Logout = () => {
   const user = useSelector(selectuser);
 
-  const Dispatch = useDispatch();
+  const dispatch = useDispatch();
   const handleLogout = (e) => {
     e.preventDefault();
 
-    Dispatch(logout());
+    dispatch(logout());
   };
 
   return (
     <div className="logout">
       <h1>
-        Welcome <span className="user-name">{user.name}</span>
+        WELCOME <span className="user-name">{user.name}</span>
       </h1>
-      <button className="logout-button" on onClick={(e) => handleLogout(e)}>
+      <button className="logout-button" onClick={(e) => handleLogout(e)}>
         LOG-OUT
       </button>
     </div>
